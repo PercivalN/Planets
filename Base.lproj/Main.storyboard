@@ -92,7 +92,7 @@
         <!--Settings-->
         <scene sceneID="Zez-4Z-azz">
             <objects>
-                <viewController id="Jhb-dU-jei" customClass="SettiingsViewController" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jhb-dU-jei" customClass="SettingsViewController" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uEW-pF-N5D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wdk-36-3OT">
                                 <rect key="frame" x="345" y="160" width="51" height="31"/>
                                 <connections>
-                                    <action selector="changeShouldShowChange:" destination="Jhb-dU-jei" eventType="valueChanged" id="8x8-1d-Ke1"/>
+                                    <action selector="changeShouldShowPluto:" destination="Jhb-dU-jei" eventType="valueChanged" id="tiP-DS-sB2"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAT-aD-Zr4">
@@ -121,9 +121,9 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="gGc-45-1Lh"/>
-                        <barButtonItem systemItem="done" id="Jma-mr-5yX">
+                        <barButtonItem systemItem="done" id="j31-xc-ATU">
                             <connections>
-                                <segue destination="OLh-uj-676" kind="unwind" unwindAction="unwindToPlanetsCollectionViewController:" id="SKW-e5-oHO"/>
+                                <segue destination="OLh-uj-676" kind="unwind" unwindAction="unwindFor:towards:" id="Di1-QJ-XIO"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>

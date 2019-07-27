@@ -15,12 +15,11 @@ class PlanetCollectionViewController: UICollectionViewController {
 
     // MARK: - View Lifecycle
     
-//    over func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//
-//        collectionView?.reloadData()
-//    }
- 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        collectionView?.reloadData()
+    }
 
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -38,7 +37,6 @@ class PlanetCollectionViewController: UICollectionViewController {
         return cell
     }
     
-//    @IBAction func unwindToPlanetsCollectionViewController(_ sender: UIStoryboardSegue) {}
- }
-
+    @IBAction override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {}
+}
  
